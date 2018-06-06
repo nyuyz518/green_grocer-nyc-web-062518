@@ -6,7 +6,10 @@ def consolidate_cart(cart)
         attributes[:count] +=1 
       else
         attributes[:count] = 1 
-        
+        hash[type] = attributes
+      end 
+    end 
+  end 
 end
 
 def apply_coupons(cart, coupons)
