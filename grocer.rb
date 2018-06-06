@@ -1,5 +1,7 @@
 def consolidate_cart(cart)
   # code here
+  cart.each_with_object({}) do |item, hash|
+    item.each do |type, attributes
 end
 
 def apply_coupons(cart, coupons)
